@@ -1,5 +1,5 @@
 # BonusBetApi
-Why loose money when it's so east to win.
+Why loose money when it's so easy to win.
 
 If you feel good about the team with the lowest odds then I suggest you use this endpoint  
 3.134.244.81:5000/bet
