@@ -5,6 +5,8 @@ from bet import bet_one, bet_two, safe_bet_one, safe_bet_two
 app = Flask(__name__)
 api = Api(app)
 
+#TEST
+
 class Bet(Resource):
     def post(self):
         json_res = request.get_json()
