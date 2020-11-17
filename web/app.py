@@ -5,7 +5,6 @@ from bet import bet_one, bet_two, safe_bet_one, safe_bet_two
 app = Flask(__name__)
 api = Api(app)
 
-#TEST
 
 class Bet(Resource):
     def post(self):
@@ -49,4 +48,4 @@ api.add_resource(Bet, "/bet")
 api.add_resource(SafeBet, "/safebet")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0")
+    app.run(host="0.0.0.0", port="5000", debug=True)
