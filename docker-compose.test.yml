@@ -3,7 +3,3 @@ version: '3'
 services:
     tests:
         build: ./tests
-    web:
-        build: ./web
-        ports:
-            - "5000:5000"
