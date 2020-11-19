@@ -8,7 +8,7 @@ def bet_one_test(url):
     response = requests.post(url, json=data).json()
     test_data = {
                  'status': 200,
-                 'msg"' 'Bet was calculated succesfully!',
+                 'msg': 'Bet was calculated succesfully!',
                  'bonus': 500.0,
                  'crossBet': 500.0,
                  'oneBet': 2500, 
@@ -30,7 +30,7 @@ def bet_two_test(url):
     response = requests.post(url, json=data).json()
     test_data = {
                  'status': 200,
-                 'msg"' 'Bet was calculated succesfully!',
+                 'msg': 'Bet was calculated succesfully!',
                  'bonus': 500.0,
                  'crossBet': 500.0,
                  'oneBet': 2500, 
