@@ -25,15 +25,6 @@ class Bet(Resource):
             ret_json = bet_one(one, cross, two, bonus)
         else:
             ret_json = bet_two(one, cross, two, bonus)
-        """response = {
-            "statusCode": 200,
-            "headers": {
-                "Access-Control-Allow-Headers": "Content-Type",
-                "Access-Control-Allow-Origin": "*",
-                "Access-Control-Allow-Methods": "OPTIONS,POST,GET"
-                },
-            "body": json.dumps(ret_json)
-        }"""
 
         return jsonify(ret_json)
 
