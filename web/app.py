@@ -46,14 +46,7 @@ class SafeBet(Resource):
             ret_json = safe_bet_one(one, cross, two, bonus)
         else:
             ret_json = safe_bet_two(one, cross, two, bonus)
-        response = jsonify(ret_json)
-        response.headers.add("Access-Control-Allow-Origin", "*")
-        response.headers.add("Access-Control-Allow-Credentials", "true")
-        response.headers.add("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
-        response.headers.add("Access-Control-Allow-Headers", "Origin, Content-Type, Accept")
-
-
-        return response
+        return jsonify(ret_json)
 
 
 api.add_resource(Bet, "/bet")

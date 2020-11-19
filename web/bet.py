@@ -94,9 +94,9 @@ def safe_bet_one(one_odds, cross_odds, two_odds, bonus):
     if bets:
         bets = sorted(bets, key=lambda x: x[0])[0]
         betting = {
-            "one_bet": bets[3]*100,
-            "cross_bet": cross_bet*100,
-            "two_bet": bets[4]*100,
+            "oneBet": bets[3]*100,
+            "crossBet": cross_bet*100,
+            "twoBet": bets[4]*100,
             "bonus": bonus*100,
             "winningsOnOne": bets[0]*100,
             "winningsOnCross": bets[1]*100,
@@ -130,9 +130,9 @@ def safe_bet_two(one_odds, cross_odds, two_odds, bonus):
     if bets:
         bets = sorted(bets, key=lambda x: x[2])[0]
         betting = {
-            "one_bet": bets[3]*100,
-            "cross_bet": cross_bet*100,
-            "two_bet": bets[4]*100,
+            "oneBet": bets[3]*100,
+            "crossBet": cross_bet*100,
+            "twoBet": bets[4]*100,
             "bonus": bonus*100,
             "winningsOnOne": bets[0]*100,
             "winningsOnCross": bets[1]*100,
