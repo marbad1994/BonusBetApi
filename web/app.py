@@ -1,9 +1,7 @@
 from flask import Flask, jsonify, request
 from flask_restful import Resource, Api
-from bet import bet_one, bet_two, safe_bet_one, safe_bet_two
-import json
 from flask_cors import CORS
-import sys
+from bet import bet_one, bet_two, safe_bet_one, safe_bet_two
 
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
