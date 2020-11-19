@@ -22,6 +22,8 @@ def bet_one(one_odds, cross_odds, two_odds, bonus):
     if bets:
         bets = sorted(bets, key=lambda x: x[0])[-1]
         betting = {
+            "status": 200,
+            "msg": "Bet was calculated succesfully!",
             "oneBet": bets[3]*100,
             "crossBet": cross_bet*100,
             "twoBet": bets[4]*100,
@@ -59,6 +61,8 @@ def bet_two(one_odds, cross_odds, two_odds, bonus):
     if bets:
         bets = sorted(bets, key=lambda x: x[2])[-1]
         betting = {
+            "status": 200,
+            "msg": "Bet was calculated succesfully!",
             "oneBet": bets[3]*100,
             "crossBet": cross_bet*100,
             "twoBet": bets[4]*100,
@@ -94,6 +98,8 @@ def safe_bet_one(one_odds, cross_odds, two_odds, bonus):
     if bets:
         bets = sorted(bets, key=lambda x: x[0])[0]
         betting = {
+            "status": 200,
+            "msg": "Bet was calculated succesfully!",
             "oneBet": bets[3]*100,
             "crossBet": cross_bet*100,
             "twoBet": bets[4]*100,
@@ -130,6 +136,8 @@ def safe_bet_two(one_odds, cross_odds, two_odds, bonus):
     if bets:
         bets = sorted(bets, key=lambda x: x[2])[0]
         betting = {
+            "status": 200,
+            "msg": "Bet was calculated succesfully!",
             "oneBet": bets[3]*100,
             "crossBet": cross_bet*100,
             "twoBet": bets[4]*100,
