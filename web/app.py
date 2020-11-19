@@ -58,4 +58,4 @@ api.add_resource(Bet, "/bet")
 api.add_resource(SafeBet, "/safebet")
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port="5000", debug=True)
+    app.run(threaded=True, host="0.0.0.0", port="5000", debug=True)
