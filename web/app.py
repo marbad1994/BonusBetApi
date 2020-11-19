@@ -6,7 +6,8 @@ from bet import bet_one, bet_two, safe_bet_one, safe_bet_two
 app = Flask(__name__)
 app.config['CORS_HEADERS'] = 'Content-Type'
 api = Api(app)
-CORS(app, origins="http://ec2-18-218-94-13.us-east-2.compute.amazonaws.com", allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials"], support_credentials=True)
+URL = "http://" + requests.get("http://169.254.169.254/latest/meta-data/public-hostname").text
+CORS(app, origins=URL, allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials"], support_credentials=True)
 
 
 class Bet(Resource):
