@@ -8,7 +8,7 @@ def bet_one_test(url):
     response = requests.post(url, json=data).json()
     test_data = {'bonus': 500.0,
                  'crossBet': 500.0,
-                 'oneBet': 1500, 
+                 'oneBet': 2500, 
                  'twoBet': 500,
                  'winningsOnCross': 0.0,
                  'winningsOnOne': 250.0,
