@@ -1,7 +1,7 @@
 import requests
 
 def bet_one_test():
-    url = "http://ec2-3-134-244-81.us-east-2.compute.amazonaws.com:5000/bet"
+    url = "http://ec2-18-225-6-54.us-east-2.compute.amazonaws.com:5000/bet"
     data = {"1": 1.5, "X": 3.5, "2": 8, "bonus": 500}
     response = requests.post(url, json=data).json()
     test_data = {'bonus': 500.0,
