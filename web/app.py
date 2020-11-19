@@ -10,6 +10,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 api = Api(app)
 CORS(app, origins="http://ec2-3-134-244-81.us-east-2.compute.amazonaws.com", allow_headers=["Content-Type", "Authorization", "Access-Control-Allow-Credentials"], support_credentials=True)
 
+
 class Bet(Resource):
     def post(self):
         json_res = request.get_json()
@@ -68,4 +69,4 @@ api.add_resource(Bet, "/bet")
 api.add_resource(SafeBet, "/safebet")
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port="5000")
+    app.run(host="0.0.0.0", port="5000", debug=True)
