@@ -2,7 +2,7 @@ import sys
 from bet_test import bet_one_test, bet_two_test
 from log_module import write_log_file, print_log, append_to_log
 
-URL = "http://172.31.16.204:5000/bet"
+URL = "http://localhost:5000/bet"
 TESTS = [bet_one_test, bet_two_test]
 log = "" 
 
