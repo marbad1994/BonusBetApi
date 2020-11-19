@@ -9,7 +9,8 @@ def bet_one_test():
     response = requests.post(url, json=data).json()
     test_data = {'bonus': 500.0,
                  'crossBet': 500.0, 
-                 'oneBet': 2500, 
+                 #'oneBet': 2500, 
+                 'oneBet': 2200, 
                  'twoBet': 500, 
                  'winningsOnCross': 0.0, 
                  'winningsOnOne': 250.0, 
@@ -22,7 +23,7 @@ def bet_one_test():
         print(response)
         print("Test data:")
         print(test_data)
-        with open("/opt/TEST/tests/log/log_" + str(datetime.datetime.now()), "w") as f:
+        with open("/opt/log/log_" + str(datetime.datetime.now()), "w") as f:
             f.write("Response:\n" + str(response) + "\nTest data:\n" + str(test_data))
         sys.exit(1)
 
