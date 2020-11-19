@@ -1,5 +1,3 @@
-import requests
-import datetime
 import sys
 from bet_test import bet_one_test, bet_two_test
 from log_module import write_log_file, print_log, append_to_log
