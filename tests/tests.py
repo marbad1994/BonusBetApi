@@ -23,7 +23,10 @@ def bet_one_test():
         print(response)
         print("Test data:")
         print(test_data)
-        with open("/opt/log/log_" + str(datetime.datetime.now()), "w") as f:
+        log_path = "/opt/log/"
+        log_date = str(datetime.datetime.now()).replace(" ", "-")
+        log_filename = log_path + "log-" + log_date
+        with open(log_filename, "w") as f:
             f.write("Response:\n" + str(response) + "\nTest data:\n" + str(test_data))
         sys.exit(1)
 
