@@ -23,7 +23,7 @@ def bet_one_test():
         print(response)
         print("Test data:")
         print(test_data)
-        with open("log" + datetime.datetime.now(), "w") as f:
+        with open("log_" + str(datetime.datetime.now()), "w") as f:
             f.write("Response:\n" + response + "\nTest data:\n" + test_data)
         sys.exit(1)
 
